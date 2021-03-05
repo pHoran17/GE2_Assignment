@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 444}
   m_MaxSize: {x: 22012, y: 10022}
   vertical: 0
-  controlID: 92
+  controlID: 18
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 444}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 54
+  controlID: 120
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -389,9 +389,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -22.05365, y: -51.921173, z: 206.31442}
+    m_Target: {x: -65.19794, y: -10.490646, z: 322.06387}
     speed: 2
-    m_Value: {x: -22.05365, y: -51.921173, z: 206.31442}
+    m_Value: {x: -65.19794, y: -10.490646, z: 322.06387}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -420,13 +420,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.2024956, y: 0.77108425, z: -0.29713356, w: -0.5254906}
+    m_Target: {x: -0.20823203, y: 0.6258195, z: -0.17847337, w: -0.7301648}
     speed: 2
-    m_Value: {x: -0.20328319, y: 0.77063614, z: -0.29828927, w: -0.52518517}
+    m_Value: {x: -0.20849909, y: 0.6247223, z: -0.17816046, w: -0.7311013}
   m_Size:
-    m_Target: 284.52353
+    m_Target: 373.1523
     speed: 2
-    m_Value: 272.27133
+    m_Value: 357.08356
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -481,9 +481,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f22f0000
-      m_LastClickedID: 12274
-      m_ExpandedIDs: 329dfeff349dfeff549dfeff6ea7feff82acfeff7afbffff
+      m_SelectedIDs: 78fbffff
+      m_LastClickedID: -1160
+      m_ExpandedIDs: 78fbffff7afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -546,20 +546,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Documents\GameEngines\GE2_Assignment\GE2_Assignment
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a300000
-    m_LastClickedID: 12330
-    m_ExpandedIDs: 00000000fa2c00002a300000404c0000464c000000ca9a3b
+    m_SelectedIDs: fa4c0000
+    m_LastClickedID: 19706
+    m_ExpandedIDs: 000000007a2c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -587,7 +587,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000007a2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
