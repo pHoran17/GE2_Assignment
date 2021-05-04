@@ -20,6 +20,18 @@ public class Boid : MonoBehaviour
     public float maxSpeed = 5.0f;
     public float maxForce = 10.0f;
 
+    public bool seekEnabled = true;
+    public Transform seekTargetTransform;
+    public Vector3 seekTarget;
+    public bool arriveEnabled = true;
+    public Transform arriveTargetTransform;
+    public Vector3 arriveTarget;
+    public float slowingDistance = 50;
+
+    public Path path;
+    public bool pathFollowingEnabled = false;
+    public float waypointDistance = 3;
+
     public void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
@@ -85,7 +97,37 @@ public class Boid : MonoBehaviour
         }
         return force;
     }
-
+    public Vector3 PathFollow()
+    {
+        Vector3 nextWaypoint = path.NextWaypoint();
+        if(!path.looped && path.IsLast())
+        {
+            return Arrive(nextWaypoint);
+        }
+        else
+        {
+            if(Vector3.Distance(transform.position, nextWaypoint) < waypointDistance)
+            {
+                path.AdvanceToNext();
+            }
+            return Seek(nextWaypoint);
+        }
+    }
+    public Vector3 Seek(Vector3 target)
+    {
+        Vector3 toTarget = target - transform.position;
+        Vector3 desired = toTarget.normalized * maxSpeed;
+        return(desired- velocity);
+    }
+    public Vector3 Arrive(Vector3 target)
+    {
+        Vector3 toTarget = target - transform.position;
+        float dist = toTarget.magnitude;
+        float ramped = (dist/slowingDistance) * maxSpeed;
+        float clamped = Mathf.Min(ramped, maxSpeed);
+        Vector3 desired = (toTarget / dist) * clamped;
+        return desired - velocity;
+    }
     // Update is called once per frame
     void Update()
     {
