@@ -9,3 +9,5 @@ The inspiration for this assignment comes from the Metroid series of video games
 The second battle will be between Samus and Space Pirates while she is in pursuit of their leader Ridley.
 
 The storyboards for this assignment can be found here: https://imgur.com/a/EegkQBB
+
+A video of the completed assignment can be seen here: https://youtu.be/k79-v8o0gBo
