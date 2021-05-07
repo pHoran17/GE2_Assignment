@@ -28,8 +28,10 @@ public class EnemyController : MonoBehaviour
 
     public void OnTriggerEnter(Collider collide)
     {
+        print(collide.tag);
         if(collide.tag == "Bullet")
         {
+            print("Hit");
             if(GetComponent<Fighter>().health > 0)
             {
                 GetComponent<Fighter>().health --;

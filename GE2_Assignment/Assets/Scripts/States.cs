@@ -24,6 +24,8 @@ public class DefendState : State
 {
     public override void Enter()
     {
+        //owner.GetComponent<OffsetPursue>().target = owner.GetComponent<Fighter>().enemy1.GetComponent<Boid>();
+        //owner.GetComponent<OffsetPursue>().enabled = true;
         owner.GetComponent<Persue>().target = owner.GetComponent<Fighter>().enemy1.GetComponent<Boid>();
         owner.GetComponent<Persue>().enabled = true;
     }
@@ -42,6 +44,7 @@ public class DefendState : State
     }
     public override void Exit()
     {
+        //owner.GetComponent<OffsetPursue>().enabled = false;
         owner.GetComponent<Persue>().enabled = false;
     }
 }
@@ -49,7 +52,9 @@ public class AttackState : State
 {
     public override void Enter()
     {
-        owner.GetComponent<Persue>().target = owner.GetComponent<Fighter>().enemy.GetComponent<Boid>();
+        //owner.GetComponent<OffsetPursue>().target = owner.GetComponent<Fighter>().enemy.GetComponent<Boid>();
+        //owner.GetComponent<OffsetPursue>().enabled = true;
+        owner.GetComponent<Persue>().target = owner.GetComponent<Fighter>().enemy1.GetComponent<Boid>();
         owner.GetComponent<Persue>().enabled = true;
     }
     public override void Think()
@@ -67,6 +72,7 @@ public class AttackState : State
     }
     public override void Exit()
     {
+        //owner.GetComponent<OffsetPursue>().enabled = false;
         owner.GetComponent<Persue>().enabled = false;
     }
 }

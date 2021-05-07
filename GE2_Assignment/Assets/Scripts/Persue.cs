@@ -25,7 +25,8 @@ public class Persue : SteeringBehaviour
 
         targetPos = target.transform.position + (target.velocity * time);
 
-        return boid.SeekForce(targetPos); 
+        //return boid.SeekForce(targetPos); 
+        return boid.ArriveForce(targetPos); 
     }
        
 }
