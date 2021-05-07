@@ -30,7 +30,7 @@ public class SceneTransition : MonoBehaviour
     {
         float dist = Vector3.Distance(other.position, player.position);
         print("Dist: " + dist);
-        if(dist >= 250)
+        if(dist >= 350)
         {
             //SceneManager.LoadScene(sceneToLoad);
             StartCoroutine(LoadBackgroundScene());

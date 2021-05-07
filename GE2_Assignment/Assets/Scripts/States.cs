@@ -69,6 +69,10 @@ public class AttackState : State
         {
             owner.ChangeState(new EvadeState());
         }
+        if(owner.GetComponent<Fighter>().enemy1.GetComponent<StateMachine>().currentState.GetType() == typeof(Dead))
+        {
+            owner.ChangeState(new FindExit());
+        }
     }
     public override void Exit()
     {
@@ -93,6 +97,44 @@ public class EvadeState : State
     public override void Exit()
     {
         owner.GetComponent<Evade>().enabled = false;
+    }
+}
+public class FindExit : State 
+{
+    public override void Enter()
+    {
+        owner.GetComponent<PlayerExitPath>().enabled = true;
+        
+    }
+    public override void Think()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject sceneExit = GameObject.FindWithTag("Exit");
+        foreach(GameObject go in enemies)
+        {
+            if(owner.GetComponent<Fighter>().enemy1.GetComponent<StateMachine>().currentState.GetType() != typeof(Dead))
+            {
+                owner.GetComponent<PlayerExitPath>().enabled = false;
+                
+                owner.ChangeState(new AttackState());
+                //owner.GetComponent<Persue>().target = go.GetComponent<Boid>();
+                //owner.GetComponent<Persue>().enabled = true;
+            }
+            
+            /*else
+            {
+                owner.GetComponent<PlayerExitPath>().enabled = true;
+            }*/
+        }
+    }
+    
+    public override void Exit()
+    {
+        if(owner.GetComponent<Persue>().target.GetComponent<StateMachine>().currentState.GetType() != typeof(Dead))
+        {
+            owner.GetComponent<PlayerExitPath>().enabled = false;
+        }
+        
     }
 }
 public class Alive : State

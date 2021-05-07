@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 7c9b04f6b5b7ad74d94f79cfaf709331
+  - enabled: 1
     path: Assets/Scenes/EscapeStation.unity
     guid: 065803b8ce6b2ee45a3c9bc9ea3b4aa8
   - enabled: 1
     path: Assets/Scenes/AttackPossessedShip.unity
     guid: 212a04f9bf7857543804ed253a66beb0
+  - enabled: 1
+    path: Assets/Scenes/SpacePirateBattle.unity
+    guid: 74885eda7d682ff4db79f3e4ec05f5fe
+  - enabled: 1
+    path: Assets/Scenes/EndCredits.unity
+    guid: f9f4d3ff351570042b7fe59e0041cc86
   m_configObjects: {}

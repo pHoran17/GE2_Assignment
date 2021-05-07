@@ -26,6 +26,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach(GameObject e in enemies)
+        {
+            if(e.GetComponent<StateMachine>().currentState.GetType() == typeof(Dead))
+            {
+                GetComponent<StateMachine>().ChangeState(new FindExit());
+            }
+        }
+        
+        
         
     }
 }

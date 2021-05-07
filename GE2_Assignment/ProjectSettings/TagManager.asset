@@ -9,6 +9,8 @@ TagManager:
   - Battlefield
   - Enemy
   - Bullet
+  - Station
+  - Exit
   layers:
   - Default
   - TransparentFX
