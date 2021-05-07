@@ -280,30 +280,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5941768072878580315, guid: bac860f43a9d7a145a252838d39bbd29,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941768072878580315, guid: bac860f43a9d7a145a252838d39bbd29,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941768072878580315, guid: bac860f43a9d7a145a252838d39bbd29,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5941768072682384910, guid: bac860f43a9d7a145a252838d39bbd29,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -121
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941768072682384904, guid: bac860f43a9d7a145a252838d39bbd29,
-        type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
+      value: -271
       objectReference: {fileID: 0}
     - target: {fileID: 5941768072682384905, guid: bac860f43a9d7a145a252838d39bbd29,
         type: 3}
@@ -331,6 +311,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_BestFit
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768071622050739, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -266
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580315, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580315, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580315, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072682384904, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac860f43a9d7a145a252838d39bbd29, type: 3}

@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerExitPath : SteeringBehaviour
 {
     public Path path;
+    GameObject[] enemies;
     Vector3 nextWaypoint;
     public float waypointDistance = 5;
+    //bool isSafe = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +18,14 @@ public class PlayerExitPath : SteeringBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*enemies = GameObject.FindGameObjectsWithTag("Enemy")
+        foreach(GameObject g in enemies)
+        {
+            if(g.GetComponent<StateMachine>().currentState.GetType() == typeof(Dead))
+            {
+
+            }
+        }*/
     }
     public void OnDrawGizmos()
     {
@@ -29,20 +38,43 @@ public class PlayerExitPath : SteeringBehaviour
 
     public override Vector3 Calculate()
     {
-        nextWaypoint = path.NextWaypoint();
-        print(Vector3.Distance(transform.position, nextWaypoint));
-        if(Vector3.Distance(transform.position, nextWaypoint) < waypointDistance)
+        /*if(isSafe)
         {
-            print("Condition met");
-            path.AdvanceToNext();
-        }
-        if(!path.looped && path.IsLast())
-        {
-            return boid.ArriveForce(nextWaypoint);
+            nextWaypoint = path.NextWaypoint();
+            print(Vector3.Distance(transform.position, nextWaypoint));
+            if(Vector3.Distance(transform.position, nextWaypoint) < waypointDistance)
+            {
+                print("Condition met");
+                path.AdvanceToNext();
+            }
+            if(!path.looped && path.IsLast())
+            {
+                return boid.ArriveForce(nextWaypoint);
+            }
+            else
+            {
+                return boid.SeekForce(nextWaypoint);
+            }
         }
         else
         {
-            return boid.SeekForce(nextWaypoint);
-        }
+
+        }*/
+         nextWaypoint = path.NextWaypoint();
+            print(Vector3.Distance(transform.position, nextWaypoint));
+            if(Vector3.Distance(transform.position, nextWaypoint) < waypointDistance)
+            {
+                print("Condition met");
+                path.AdvanceToNext();
+            }
+            if(!path.looped && path.IsLast())
+            {
+                return boid.ArriveForce(nextWaypoint);
+            }
+            else
+            {
+                return boid.SeekForce(nextWaypoint);
+            }
+        
     }
 }

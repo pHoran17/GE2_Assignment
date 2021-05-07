@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SpacePirateBattle.unity
+- path: Assets/Scenes/AttackPossessedShip.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

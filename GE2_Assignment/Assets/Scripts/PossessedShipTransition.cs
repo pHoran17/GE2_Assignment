@@ -20,14 +20,14 @@ public class PossessedShipTransition : MonoBehaviour
     {
         if(!GameObject.FindWithTag("Target") && !GameObject.FindWithTag("Target2"))
         {
-            print("Targets destroyed");
+            //print("Targets destroyed");
             isTargetsDestroy = true;
         }
         if(isTargetsDestroy)
         {
             float dist = Vector3.Distance(ship.position, player.position);
             print(dist);
-            if(dist >= 200)
+            if(dist < 820)
             {
                 StartCoroutine(LoadBackgroundScene());
             }

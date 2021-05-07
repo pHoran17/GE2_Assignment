@@ -110,9 +110,11 @@ public class FindExit : State
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         GameObject sceneExit = GameObject.FindWithTag("Exit");
+        int count = enemies.Length;
+        int i =0;
         foreach(GameObject go in enemies)
         {
-            if(owner.GetComponent<Fighter>().enemy1.GetComponent<StateMachine>().currentState.GetType() != typeof(Dead))
+            /*if(owner.GetComponent<Fighter>().enemy1.GetComponent<StateMachine>().currentState.GetType() != typeof(Dead))
             {
                 owner.GetComponent<PlayerExitPath>().enabled = false;
                 
@@ -121,10 +123,24 @@ public class FindExit : State
                 //owner.GetComponent<Persue>().enabled = true;
             }
             
-            /*else
+            else
             {
                 owner.GetComponent<PlayerExitPath>().enabled = true;
             }*/
+            if(go.GetComponent<StateMachine>().currentState.GetType() != typeof(Dead) && (i >= count))
+            {
+                owner.GetComponent<PlayerExitPath>().enabled = false;
+                owner.GetComponent<Persue>().target = go.GetComponent<Boid>();
+                owner.GetComponent<Persue>().enabled = true;
+                //owner.ChangeState(new AttackState());
+            }
+            if(go.GetComponent<StateMachine>().currentState.GetType() == typeof(Dead) && (i >= count))
+            {
+                owner.GetComponent<PlayerExitPath>().enabled = true;
+                owner.GetComponent<Persue>().enabled = false;
+            }
+            i++;
+
         }
     }
     

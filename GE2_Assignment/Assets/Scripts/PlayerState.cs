@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerState : MonoBehaviour
 {
     public Path path;
+    public GameObject bullet;
     public float maxSpeed = 10.0f;
     public float attackRange = 10.0f;
     public float chaseRange = 30.0f;
@@ -14,6 +15,13 @@ public class PlayerState : MonoBehaviour
     private Vector3 direction;
     private Vector3 destination;
     private Quaternion rotation;
+
+    [Range(0.0f, 10.0f)]
+    public float damping = 0.01f;
+
+    [Range(0.0f, 10.0f)]
+    public float banking = 0.01f;
+
     
     //Doesnt change destination upon arrival
     public void OnDrawGizmos()
@@ -47,6 +55,7 @@ public class PlayerState : MonoBehaviour
                 print("Dest Needed: " + NeedDes());
                 //print("Current State: " + _currentState);
                 transform.rotation = rotation;
+                
                 transform.Translate(Vector3.forward * Time.deltaTime * maxSpeed);
 
                 //Code for checking for target
@@ -85,6 +94,8 @@ public class PlayerState : MonoBehaviour
             {
                 if(turret != null)
                 {
+                    //Make bullet
+                    GameObject.Instantiate(bullet, transform.position + transform.forward * 2, transform.rotation);
                     Destroy(turret.gameObject);
                     print("State: " + _currentState);
                     //_currentState = PState.Wander;

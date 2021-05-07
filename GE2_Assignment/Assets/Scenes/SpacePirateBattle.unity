@@ -918,23 +918,53 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580312, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580312, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580312, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5941768072682384910, guid: bac860f43a9d7a145a252838d39bbd29,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -155
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 5941768072682384905, guid: bac860f43a9d7a145a252838d39bbd29,
         type: 3}
       propertyPath: m_Text
-      value: Samus, the planet Phendrana is near by but Space Pirate patrols have
-        been spotted nearby. They must have attacked the G.F.S. Tyr. Don't let them
-        get away with this
+      value: Samus, the planet Phendrana is near but Space Pirate patrols have been
+        spotted nearby. They must have attacked the G.F.S. Tyr. Don't let them get
+        away with this
       objectReference: {fileID: 0}
     - target: {fileID: 5941768072682384905, guid: bac860f43a9d7a145a252838d39bbd29,
         type: 3}
       propertyPath: m_FontData.m_BestFit
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5941768071622050739, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -236
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580313, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580313, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 774759128}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac860f43a9d7a145a252838d39bbd29, type: 3}
 --- !u!1 &774759126
@@ -1108,7 +1138,7 @@ MonoBehaviour:
   mass: 4
   damping: 0.01
   banking: 0.1
-  maxSpeed: 20
+  maxSpeed: 40
   maxForce: 10
 --- !u!114 &891746870
 MonoBehaviour:
@@ -2267,16 +2297,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5941768072878580309, guid: bac860f43a9d7a145a252838d39bbd29,
-        type: 3}
-      propertyPath: isEnabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941768072682384911, guid: bac860f43a9d7a145a252838d39bbd29,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5941768072682384910, guid: bac860f43a9d7a145a252838d39bbd29,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2292,6 +2312,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_BestFit
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072878580309, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: isEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941768072682384911, guid: bac860f43a9d7a145a252838d39bbd29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5941768071622050736, guid: bac860f43a9d7a145a252838d39bbd29,
         type: 3}

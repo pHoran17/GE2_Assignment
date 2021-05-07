@@ -18,11 +18,11 @@ public class SpaceBattleExit : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(transform.position, ship.position);
-        if(dist < 250)
+        if(dist < 350)
         {
             endDialogue.GetComponent<HideDialogue>().isEnabled = true;
         }
-        if(dist < 150)
+        if(dist < 300)
         {
             StartCoroutine(LoadBackgroundScene());
         }
