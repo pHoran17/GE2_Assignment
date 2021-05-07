@@ -20,17 +20,17 @@ public class Boid : MonoBehaviour
     public float maxSpeed = 5.0f;
     public float maxForce = 10.0f;
 
-    public bool seekEnabled = true;
-    public Transform seekTargetTransform;
-    public Vector3 seekTarget;
-    public bool arriveEnabled = true;
-    public Transform arriveTargetTransform;
-    public Vector3 arriveTarget;
-    public float slowingDistance = 50;
+    //public bool seekEnabled = true;
+    //public Transform seekTargetTransform;
+    //public Vector3 seekTarget;
+    //public bool arriveEnabled = true;
+    //public Transform arriveTargetTransform;
+    //public Vector3 arriveTarget;
+    //public float slowingDistance = 50;
 
-    public Path path;
-    public bool pathFollowingEnabled = false;
-    public float waypointDistance = 3;
+    //public Path path;
+    //public bool pathFollowingEnabled = false;
+    //public float waypointDistance = 3;
 
     public void OnDrawGizmos()
     {
@@ -96,7 +96,7 @@ public class Boid : MonoBehaviour
             }
         }
         return force;
-    }
+    }/*
     public Vector3 PathFollow()
     {
         Vector3 nextWaypoint = path.NextWaypoint();
@@ -128,6 +128,7 @@ public class Boid : MonoBehaviour
         Vector3 desired = (toTarget / dist) * clamped;
         return desired - velocity;
     }
+    */
     // Update is called once per frame
     void Update()
     {

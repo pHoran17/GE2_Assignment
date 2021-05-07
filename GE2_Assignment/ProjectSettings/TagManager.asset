@@ -8,6 +8,7 @@ TagManager:
   - Target2
   - Battlefield
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

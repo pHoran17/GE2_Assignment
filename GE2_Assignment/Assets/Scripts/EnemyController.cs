@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    EnemyState _currentState;
+    //EnemyState _currentState;
     public float maxSpeed = 15.0f;
     public float attackRange = 30.0f;
     public float evadeRange = 40.0f;
@@ -16,18 +16,36 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(GameObject.FindWithTag("Player") != null)
+        /*if(GameObject.FindWithTag("Player") != null)
         {
             player = GameObject.FindWithTag("Player");
-        }
+        }*/
+        GetComponent<StateMachine>().ChangeState(new PatrolState());
+        GetComponent<StateMachine>().SetGlobalState(new Alive());
         
+    }
+
+
+    public void OnTriggerEnter(Collider collide)
+    {
+        if(collide.tag == "Bullet")
+        {
+            if(GetComponent<Fighter>().health > 0)
+            {
+                GetComponent<Fighter>().health --;
+            }
+            Destroy(collide.gameObject);
+            if(GetComponent<StateMachine>().currentState.GetType() != typeof(Dead))
+            {
+                GetComponent<StateMachine>().ChangeState(new DefendState());
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        //
-        switch(_currentState)
+        /*switch(_currentState)
         {
             case EnemyState.Wander:
             {
@@ -37,7 +55,6 @@ public class EnemyController : MonoBehaviour
 
                     transform.rotation = rotation;
                     transform.Translate(Vector3.forward * Time.deltaTime * maxSpeed);
-                    //yield WaitForSeconds(4.0f);
 
                     break;
                 }
@@ -55,8 +72,9 @@ public class EnemyController : MonoBehaviour
             {
                 break;
             }
-        }
+        }*/
     }
+    /*
     private void Patrol()
     {
         Vector3 patrolDest = (transform.position + (transform.forward * 5f) + 
@@ -80,12 +98,13 @@ public class EnemyController : MonoBehaviour
             return false;
         }
     }
+    */
 
 }
 
-public enum EnemyState
+/*public enum EnemyState
 {
     Wander,
     Evade,
     Attack
-}
+}*/
