@@ -49,5 +49,6 @@ Frigate Orpheon: "00 Exterior Docking Hangar" (https://skfb.ly/6XIwS) by kwstasg
 
 ---
 
+Video:
 
-A video of the completed assignment can be seen here: <iframe width="560" height="315" src="https://www.youtube.com/embed/k79-v8o0gBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Game Engines 2 Assignment](http://img.youtube.com/vi/k79-v8o0gBo/0.jpg)](https://www.youtube.com/embed/k79-v8o0gBo)
