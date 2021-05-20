@@ -16,7 +16,9 @@ The storyboards for this assignment can be found here: https://imgur.com/a/EegkQ
 
 ## Story:
 The story begins with bounty hunter Samus Aran escaping the Orpheon. The Orpheon is a Space Pirate frigate ship which had sent out a distress signal which Samus recieved. Upon investigating the ship, Samus was attacked by Ridley, her arch enemy and leader of the Space Pirates. 
+
 Samus' escape leads her to head towards the planet Phendrana to hunt down Ridley. Along her journey, Samus encounters the G.F.S Tyr, a previously allied ship that has become hostile as a result of its former crew becoming possessed. Samus is forced to disable the ship's engines in order to prevent the crew from potentially doing any damage to the Galactic Federation. 
+
 Samus encounters a group of space pirates upon apparoaching Phendrana who attack her on sight. She is forced to battle these pirates in order to reach her goal of bringing Ridley to justice. 
 
 ---
@@ -36,9 +38,13 @@ Scripts for handling scene transitions and ui elements were also created by myse
 
 ## Credits:
 Space Pirate Ships: https://assetstore.unity.com/packages/3d/vehicles/space/free-sf-fighter-11711
+
 Explosion Assets: https://assetstore.unity.com/packages/vfx/particles/fire-explosions/fx-explosion-pack-30102
+
 Samus Gunship: "Gunship Metroid" (https://skfb.ly/6WQUM) by TNTPredarno is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 G.F.S. Tyr: https://3dwarehouse.sketchup.com/model/24211ad0-bae4-4745-8e90-e5834ef5202d/GFS-Tyr-Metroid
+
 Frigate Orpheon: "00 Exterior Docking Hangar" (https://skfb.ly/6XIwS) by kwstasg is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
 
 ---
